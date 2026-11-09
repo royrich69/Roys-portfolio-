@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roys portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9d2b799214.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="photos/R2logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">contact</a></li>  
+                    <i id="navBtn" class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+                </ul>
+                <i id="navBtn" class="fa-solid fa-bars-staggered" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Web Designer/video editor
+                </p>
+                <h1>
+                    Hi, I am <span>Roy</span> <br> Yalami Richard <br>
+                </h1>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photos/photo3.jpg">
+                         </div>
+                    <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>
+                        Hi, I’m Roy Yalami Richard, a Computer Science student and aspiring Web Developer passionate 
+                        about technology, creativity, and digital innovation. I specialize in building responsive websites, 
+                        graphic design, and creating engaging digital content. I’m continuously improving my skills in HTML,
+                        CSS, JavaScript, and React while exploring digital marketing and community management.My goal is to 
+                        use technology and creativity to solve problems, help businesses grow online, and create meaningful digital 
+                        experiences. I’m always eager to learn, collaborate, and take on new challenges.
+                    </p>   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick ="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span>UI/UX</span> <br> Designing app/web interface </li>
+                         <li> <span>Web Development</span> <br>Web/App Development</li>
+                         <li> <span>App Development</span> <br> Building Android/ios apps</li>
+    
+                    </ul>
+                  </div>  
+                              
+                  <div class="tab-contents" id="experience">
+                    <ul>
+                        <li> <span>2026  </span> <br> Web Development internship at Toko Academy</li>
+                         <li> <span>2024 </span> <br>Graphic design</li>
+                         <li> <span>2026 </span> <br>Video editing at Toko Academy</li>
+    
+                    </ul>
+                  </div>       
+                  
+                  <div class="tab-contents" id="education">
+                    <ul>
+                        <li> <span>2023-Present</span> <br> independent Graphic design  </li>
+                         <li> <span>2023-Present</span> <br>B.Sc Computer science-Taraba State University</li>
+                         <li> <span>2026-present</span> <br>web Development/Video editing - Toko Academy</li>
+    
+                    </ul>
+                  </div>  
+                    </div>  
+                </div>   
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+     <div id="services">
+          <div class="container">
+            <h1 class="sub-title" > My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code" style="width: 50px; height: 50px;"></i>
+                    <h2>Web Design</h2>
+                    <p>I create modern, responsive, and user-friendly websites that help businesses build a strong online presence. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                                <div>
+                                    <i class="fa-solid fa-object-group" style="width: 50px; height: 50px;"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I design eye-catching flyers, banners, social media graphics, and visual content that make brands stand out. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                                <div>
+                                    <i class="fa-solid fa-video-slash"  style="width: 50px; height: 50px;"></i>
+                    <h2> Video Editing</h2>
+                    <p>I transform raw footage into engaging videos with smooth transitions, creative effects, and professional storytelling. </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+          </div>
+     </div>
+
+
+     
+
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="Work-list">
+            <div class="Work">
+                 <img src="photos/coding.jpg">
+                 <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Personal Portfolio Website, React Development, Web Design</p>
+                    <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                 </div>
+            </div> 
+
+             <div class="Work">
+                 <img src="photos/Graphicd.jpg">
+                 <div class="layer">
+                    <h3>Graphic Design</h3>
+                    <p>Creatives flyers, promotional materials, and social media designs developed for branding and digital marketing.</p>
+                    <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                 </div>
+            </div>
+
+             <div class="Work">
+                 <img src="photos/videoed.jpg">
+                 <div class="layer">
+                    <h3>Video Editing</h3>
+                    <p>Promotional videos, social media content, and engaging visual stories created for digital platforms.</p>
+                    <a href="#"><i class="fa-solid fa-share-from-square"></i></a>
+                 </div>
+            </div> 
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+         <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane" style="color: #ff004f;margin-right: 15px;font-size: 25px;"></i>royrichar619@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume" style="color: #ff004f; margin-right: 15px;font-size: 25px;"></i></i> 07026167654-08123304762</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="https://t.me/Network_Busy"><i class="fa-brands fa-telegram"></i></i></a>
+                    <a href="https://wa.me/2347026167654"><i class="fa-brands fa-whatsapp"></i></i></a>
+                </div>
+                <a href="photos\royscv.docx" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form id="contactform">
+                    <input type="text" name=""placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="massage" rows="6" placeholder="Your Massage" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+               <span id="formStatus" style="color: #ff004f; display: block; margin-top: 20px;"></span>
+          
+            </div>
+         </div>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+             for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+    const scriptURL = "https://script.google.com/macros/s/AKfycbxa2m1DLQYKEP1FxFvGQGXe0bxLd20mXYMOkp3IXdRlTNh2Pl4ARfRtyjdY1jFodEMOtw/exec";
+
+const form = document.getElementById("contactform");
+const status = document.getElementById("formStatus");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    status.textContent = "Sending message...";
+
+    try {
+        await fetch(scriptURL, {
+            method: "POST",
+            body: new FormData(form),
+            mode: "no-cors"
+        });
+
+        status.textContent = "Thank you! Your message has been sent.";
+        form.reset();
+
+    } catch (error) {
+        status.textContent = "Something went wrong. Try again.";
+        console.error(error);
+    }
+});
+</script>
+
+
+</body>
+</html>
+
